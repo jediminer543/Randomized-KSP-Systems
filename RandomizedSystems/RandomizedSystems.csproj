@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -48,6 +48,7 @@
     <Compile Include="AstroUtils.cs" />
     <Compile Include="Randomizers\GeneralRandomizer.cs" />
     <Compile Include="Debugger\Debugger.cs" />
+    <Compile Include="Space Center\FlightReturn.cs" />
     <Compile Include="Warp Drive\WarpDrive.cs" />
     <Compile Include="Space Center\KSCReturn.cs" />
     <Compile Include="Vessels\VesselManager.cs" />
@@ -62,14 +63,5 @@
     <Compile Include="Randomizers\PlanetRandomizerException.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="Part Module\" />
-    <Folder Include="Randomizers\" />
-    <Folder Include="Debugger\" />
-    <Folder Include="Space Center\" />
-    <Folder Include="Warp Drive\" />
-    <Folder Include="Vessels\" />
-    <Folder Include="Save Games\" />
-    <Folder Include="Systems\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>
